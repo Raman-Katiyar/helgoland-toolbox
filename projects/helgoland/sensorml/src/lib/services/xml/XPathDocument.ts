@@ -7,7 +7,7 @@ export class XPathDocument {
     return new XPathDocument(document);
   }
 
-  constructor(document: Document) {}
+  constructor(private document: Document) {}
 
   eval(
     expr: string,
