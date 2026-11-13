@@ -23,7 +23,7 @@ describe('FirstLatestTimeseriesEntryComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FirstLatestTimeseriesEntryComponent);
     component = fixture.componentInstance;
-    component.datasetId = 'temp__temp';
+    fixture.componentRef.setInput('datasetId', 'temp__temp');
     fixture.detectChanges();
   });
 

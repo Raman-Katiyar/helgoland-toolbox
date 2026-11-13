@@ -36,10 +36,10 @@ describe('TimeseriesEntryComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TimeseriesEntryComponent);
     component = fixture.componentInstance;
-    component.datasetId = 'temp__temp';
-    component.datasetOptions = new DatasetOptions(
-      component.datasetId(),
-      '#123456',
+    fixture.componentRef.setInput('datasetId', 'temp__temp');
+    fixture.componentRef.setInput(
+      'datasetOptions',
+      new DatasetOptions('temp__temp', '#123456'),
     );
     fixture.detectChanges();
   });

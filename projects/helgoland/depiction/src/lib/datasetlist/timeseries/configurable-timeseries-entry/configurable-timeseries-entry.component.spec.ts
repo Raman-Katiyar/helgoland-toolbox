@@ -23,7 +23,7 @@ describe('ConfigurableTimeseriesEntryComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ConfigurableTimeseriesEntryComponent);
     component = fixture.componentInstance;
-    component.datasetId = 'temp__temp';
+    fixture.componentRef.setInput('datasetId', 'temp__temp');
     fixture.detectChanges();
   });
 
